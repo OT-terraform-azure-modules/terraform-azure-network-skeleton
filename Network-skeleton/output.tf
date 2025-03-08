@@ -10,6 +10,10 @@ output "subnets" {
   value = { for key, subnet in azurerm_subnet.modular_subnet : key => subnet.name }
 }
 
+output "subnet_ids" {
+  value = { for key, subnet in azurerm_subnet.modular_subnet : key => subnet.id }
+}
+
 output "nsgs" {
   value = { for key, nsg in azurerm_network_security_group.modular_nsg : key => nsg.name }
 }
