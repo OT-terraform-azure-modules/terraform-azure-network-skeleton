@@ -5,5 +5,7 @@ module "network" {
   location               = var.location
   vnets                  = var.vnets
   subnets                = var.subnets
-#  nsgs                   = var.nsgs
+  nsgs                   = var.nsgs
+  nsg_rules = var.nsg_rules
+  nsg_associations = var.nsg_associations
 }

@@ -9,7 +9,7 @@ output "vnets" {
 output "subnets" {
   value = { for key, subnet in azurerm_subnet.modular_subnet : key => subnet.name }
 }
-#
-#output "nsgs" {
-#  value = { for key, nsg in azurerm_network_security_group.modular_nsg : key => nsg.name }
-#}
+
+output "nsgs" {
+  value = { for key, nsg in azurerm_network_security_group.modular_nsg : key => nsg.name }
+}
