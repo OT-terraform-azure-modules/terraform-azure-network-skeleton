@@ -6,6 +6,11 @@ output "vnets" {
   value = { for key, vnet in azurerm_virtual_network.modular_vnet : key => vnet.name }
 }
 
+output "vnet_ids" {
+  value = { for key, vnet in azurerm_virtual_network.modular_vnet : key => vnet.id }
+}
+
+
 output "subnets" {
   value = { for key, subnet in azurerm_subnet.modular_subnet : key => subnet.name }
 }

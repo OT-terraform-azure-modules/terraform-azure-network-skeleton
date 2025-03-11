@@ -3,6 +3,6 @@ terraform {
     resource_group_name = "modular_tf_infra_state_rg"
     storage_account_name = "modulartfinfrastate"
     container_name = "modulartfinfrastatecontainer"
-    key = "qa/network/network.tfstate"  # Or any other key you prefer
+    key = "testing/network/network.tfstate"  # Or any other key you prefer
   }
 }
